@@ -16,6 +16,7 @@ summary(model1)
 x<-coeftest(model1, vcov = vcovHC(model1, type = "HC0"))
 summary(x)
 stargazer(x, title="Effect of treatment on Y", align=TRUE,type="text",out="x.text")
+#estimate is -0.545***         
 
 #diagnostic tests
 
